@@ -235,7 +235,7 @@
             <li class="list-inline-item"><i class="fab fa-js"></i></li>
             <li class="list-inline-item"><i class="fab fa-node"></i></li>
             <li class="list-inline-item"><i class="fab fa-react"></i></li>
-            <li class="list-inline-item"><img src="./assets/svg/rails.svg" alt="Ruby on Rails" /></li>
+            <li class="list-inline-item"><img src="./assets/svg/rails.svg"/></li>
             <li class="list-inline-item"><i class="fab fa-python"></i></li>
             <li class="list-inline-item"><i class="fab fa-golang"></i></li>
             <li class="list-inline-item"><i class="fab fa-html5"></i></li>
@@ -304,52 +304,205 @@
       <!-- Projects-->
       <section class="resume-section" id="projects">
         <div class="resume-section-content">
-          <h2 class="mb-5">Projects</h2>
+          <h2 class="mb-3">Projects</h2>
           <ul class="fa-ul mb-0">
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Anime watch tracker</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Anime watch tracker</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Django, Python, HTML, CSS, JS, SQLite</b>
+                </li>
+                <li class="ml-n2">
+                  An app to track your anime watching history. It maintains a database of watched content, and also notifies of episodes to continue watching.
+                </li>
+                <li class="ml-n2">
+                  Features:
+                   <ul class="fa-ul mb-0">
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      User Login with a personalized home page to display ‘currently watching’ shows
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Add anime name with episode count to begin tracking
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Mark episodes watched from the personal home page
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Delete finished shows from the library
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Future Prospect: Add episode release indication
+                    </li>
+                    </ul>
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>URL Shortener</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>URL Shortener</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Django, Python, HTML, CSS, JS, SQLite, Secrets for hashes</b>
+                </li>
+                <li class="ml-n2">
+                  A Django app to create short URLs
+                </li>
+                <li class="ml-n2">
+                  Features:
+                   <ul class="fa-ul mb-0">
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Frontend for both generating a new short URL and retrieving long URL using the short URL
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Checks database to ensure uniqueness of generated hashes
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Has an added redirect utility to redirect hashes to full URLs
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Hashes are saved with full URLs in SQLite database
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Future Prospect: Add episode release indication
+                    </li>
+                    </ul>
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Video downloader</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Video downloader</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python, Curses Module, Requests, File IO, Multiprocessing and Multithreading</b>
+                </li>
+                <li class="ml-n2">
+                  A CLI app to allow downloads from various type of URLs
+                </li>
+                <li class="ml-n2">
+                  Features:
+                   <ul class="fa-ul mb-0">
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Supports multiple downloads concurrently
+                    </li>
+                    <li class="ml-n2">
+                      <span class="fa-li"><i class="fas fa-angles-right fa-2xs"></i></span>
+                      Displays concurrent download status in a beautiful manner in the terminal using the curses module
+                    </li>
+                    </ul>
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Game of Life</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Game of Life</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python and Pygame</b>
+                </li>
+                <li class="ml-n2">
+                  The Game of Life, is a cellular automaton
+                </li>
+                <li class="ml-n2">
+                  It is a zero-player game, evolution is determined by its initial state, requiring no further input.
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Calendar Application</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Calendar Application</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>HTML, CSS, JS, <a href="https://fullcalendar.io/">Fullcalendar</a>, Bootstrap</b>
+                </li>
+                <li class="ml-n2">
+                  A calendar application to provide visual access to user’s leaves (apply, view and modify).
+                </li>
+                <li class="ml-n2">
+                  Admin/super-admin modes to allow managers to manage leaves of employees.
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Snake Game</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Chatter++</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python, Socket Programming</b>
+                </li>
+                <li class="ml-n2">
+                  A chat app based in Python which allows users to chat and text each other over a shared network without the use of internet.
+                </li>
+                <li class="ml-n2">
+                  It enables users to chat with logged in users using a simple interface.
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Blood Cancer Detection</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Blood Cancer Detection</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python, OpenCV</b>
+                </li>
+                <li class="ml-n2">
+                  A cancer detection app in python using OpenCV which easily detects and highlights the cancerous cells present in human blood without the use of the internet.
+                </li>
+                <li class="ml-n2">
+                  It enables the users to detect malignant cells in images as well as live camera feed.
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Chatter++</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Snake Game</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python</b>
+                </li>
+                <li class="ml-n2">
+                  A snake game based on the old snake games on phones which has an auto mode to chase after the fruit automatically.
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>YouTube Dashboard Automation</b><br />
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>YouTube Dashboard Automation</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python, Selenium Automation Framework</b>
+                </li>
+                <li class="ml-n2">
+                  The program lets you easily define Playlist and other values required for video upload in a json and run through all video drafts.
+                </li>
+              </ol>
             </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Discord / Reddit Bots</b><br />
-            </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-              <b>Document Ranker - 2018</b><br />
-              Project made in Java, ranking a corpus of documents from most to least match with search terms based on TF-IDF vector scores
+            <li class="mb-2">
+              <span class="fa-li"><i class="fas fa-gear text-warning"></i></span>
+              <b>Discord / Reddit Bots</b>
+              <ol class="fa-ol mb-0">
+                <li class="ml-n2">
+                  <b>Python, Discord API, Reddit API etc</b>
+                </li>
+                <li class="ml-n2">
+                  Discord bot can also play music throughout the server
+                </li>
+                <li class="ml-n2">
+                  Reddit bot auto replies based on the comments.
+                </li>
+              </ol>
             </li>
           </ul>
         </div>
