@@ -10469,6 +10469,7 @@ p.lead {
 }
 .social-icons .social-icon:hover {
   background-color: #008080;
+  text-decoration: none;
 }
 
 .dev-icons {
