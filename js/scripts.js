@@ -40,13 +40,20 @@
     $(this).toggleClass('fa-beat-fade');
   });
 
+  // Animation on hover for the social icons in about section
+  const socialIcons = document.getElementsByClassName('social-icons')[0].getElementsByClassName('fab');
+  for (let i = 0; i < socialIcons.length; i++) {
+    $(socialIcons[i].parentElement).hover(function () {
+      $(socialIcons[i]).toggleClass('fa-flip');
+    });
+  }
+
   // Animation on hover for the gear icons in projects
   const animationElements = document.getElementsByClassName('fa-gear');
   for (let i = 0; i < animationElements.length; i++) {
     $(animationElements[i]).hover(function () {
       $(animationElements[i]).toggleClass('fa-spin');
     });
-    // const nextEle = animationElements[i].parentElement.nextElementSibling;
     $(animationElements[i].parentElement.nextElementSibling).hover(function () {
       $(animationElements[i]).toggleClass('fa-spin');
     });
