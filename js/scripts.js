@@ -33,4 +33,22 @@
   $('body').scrollspy({
     target: '#sideNav',
   });
+
+  // Animation on hover for the link icon right next to projects heading
+  const linkIcon = document.getElementsByClassName('fa-link')[0];
+  $(linkIcon).hover(function () {
+    $(this).toggleClass('fa-beat-fade');
+  });
+
+  // Animation on hover for the gear icons in projects
+  const animationElements = document.getElementsByClassName('fa-gear');
+  for (let i = 0; i < animationElements.length; i++) {
+    $(animationElements[i]).hover(function () {
+      $(animationElements[i]).toggleClass('fa-spin');
+    });
+    // const nextEle = animationElements[i].parentElement.nextElementSibling;
+    $(animationElements[i].parentElement.nextElementSibling).hover(function () {
+      $(animationElements[i]).toggleClass('fa-spin');
+    });
+  }
 })(jQuery); // End of use strict

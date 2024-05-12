@@ -11,6 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --custom-primary: #28a99e;
+  --custom-primary-bg: #008080;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -175,12 +177,12 @@ sup {
 }
 
 a {
-  color: #28a99e;
+  color: var(--custom-primary);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #008080;
+  color: var(--custom-primary-bg);
   text-decoration: underline;
 }
 
@@ -408,6 +410,10 @@ h3,
   font-size: 2rem;
 }
 
+.fs-2 {
+  font-size: 2rem !important;
+}
+
 h4,
 .h4 {
   font-size: 1.5rem;
@@ -429,7 +435,7 @@ h6,
 }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -450,6 +456,11 @@ h6,
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+
+.display-5 {
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 hr {
@@ -5308,6 +5319,12 @@ a.badge-dark.focus {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
   animation: progress-bar-stripes 1s linear infinite;
 }
+
+.fa-spin {
+  -webkit-animation: fa-spin 3s infinite linear;
+  animation: fa-spin 3s infinite linear;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .progress-bar-animated {
     -webkit-animation: none;
@@ -6447,7 +6464,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #008080 !important;
+  background-color: var(--custom-primary-bg) !important;
 }
 
 a.bg-primary:hover,
@@ -6555,7 +6572,7 @@ button.bg-dark:focus {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid var(--custom-primary) !important;
 }
 
 .border-left {
@@ -6996,6 +7013,10 @@ button.bg-dark:focus {
 
 .justify-content-around {
   justify-content: space-around !important;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly !important;
 }
 
 .align-items-start {
@@ -10158,7 +10179,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #28a99e !important;
+  color: var(--custom-primary) !important;
+}
+
+.text-primary-2 {
+  color: var(--custom-primary-bg) !important;
 }
 
 a.text-primary:hover,
@@ -10468,7 +10493,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #008080;
+  background-color: var(--custom-primary-bg);
   text-decoration: none;
 }
 
