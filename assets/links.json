@@ -1,0 +1,13 @@
+{
+  "linkedIn": "https://www.linkedin.com/in/shikharrai/",
+  "github": "https://github.com/sudoShikhar/",
+  "website_hosted": "https://sudoshikhar.github.io/",
+  "project_showcase_hosted": "https://shikharrai.pythonanywhere.com/",
+  "project_watchTracker_hosted": "",
+  "project_urlShortener_hosted": "",
+
+  "website_code": "https://github.com/sudoShikhar/sudoShikhar.github.io",
+  "project_showcase_code": "https://github.com/sudoShikhar/projects_showcase",
+  "project_watchTracker_code": "https://github.com/sudoShikhar/Anime-Watch-Tracker",
+  "project_urlShortener_code": "https://github.com/sudoShikhar/django-url-shortener"
+}
