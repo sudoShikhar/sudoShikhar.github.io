@@ -12,29 +12,35 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Dark mode CSS -->
+    <!-- Dark mode toggle CSS -->
     <link rel="stylesheet" href="css/darkmodeToggle.css">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <!-- Simple Text Rotator -->
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css" />
     <script src="js/jquery.simple-text-rotator.js"></script>
-    <script>
-      console.log('You may not find what you\'re looking for in devtools. Feel free to reach out to me though...');
-      $(document).ready(function(){
-        $(".rotate").textrotator({
-          animation: "fade",
-          speed: 1500
-        });
-      });
-    </script>
   </head>
-  <body id="page-top">
-    <div class="wrapper">
-      <input type="checkbox" id="hide-checkbox">
-      <label for="hide-checkbox" class="toggle">
-        <span class="toggle-button">
+  <body id="page-top" class="dark-theme">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item" style="transform: scale(0.35);">
+              <input type="checkbox" id="dark-mode-checkbox">
+              <label for="dark-mode-checkbox" class="toggle">
+              <span class="dark-mode-toggle">
           <span class="crater crater-1"></span>
           <span class="crater crater-2"></span>
           <span class="crater crater-3"></span>   
@@ -52,29 +58,15 @@
         <span class="star star-7"></span>
         <span class="star star-8"></span>
       </label>
-    </div>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-none d-lg-block"
-          ><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt=""
-        /></span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+          </li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./assets/pdf/Resume_ShikharRai.pdf" target="_blank">Get my Resume!</a></li>
+          <li class="nav-item" style="display: flex;">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+              <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt=""/>
+              </span>
+            </a>
+          </li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
@@ -134,7 +126,7 @@
             <li class="list-inline-item"><i class="fab fa-square-js fa-bounce" style="animation-delay: 1s;"></i></li>
             <li class="list-inline-item"><i class="fab fa-node fa-bounce" style="animation-delay: 1.5s;"></i></li>
             <li class="list-inline-item"><i class="fab fa-react fa-bounce" style="animation-delay: 1.8s;"></i></li>
-            <li class="list-inline-item"><img src="./assets/svg/rails.svg" class="fa-bounce" style="animation-delay: 1.3s;" /></li>
+            <li class="list-inline-item"><img id="rails-icon" src="./assets/svg/rails-dark-theme.svg" class="fa-bounce" style="animation-delay: 1.3s;" /></li>
             <li class="list-inline-item"><i class="fab fa-python fa-bounce" style="animation-delay: 1.1s;"></i></li>
             <li class="list-inline-item"><i class="fab fa-golang fa-bounce" style="animation-delay: 0.8s;"></i></li>
             <li class="list-inline-item"><i class="fab fa-html5 fa-bounce" style="animation-delay: 2s;"></i></li>
