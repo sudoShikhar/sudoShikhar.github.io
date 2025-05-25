@@ -84,7 +84,6 @@ function addAnimationDelays(selector) {
 
 function addAnimationDurations(selector, duration) {
   const elements = document.querySelectorAll(selector);
-  console.log(elements.length)
   elements.forEach(function(element) {
     element.style.setProperty('--fa-animation-duration', `${duration}s`);
   });
@@ -94,15 +93,15 @@ $(document).ready(function() {
   console.log('You may not find what you\'re looking for in devtools. Feel free to reach out to me though...');
 
   $(".rotate").textrotator({
-          animation: "fade",
-          speed: 1500
-        });
+    animation: "fade",
+    speed: 1500
+  });
 
   // Check if dark mode is already enabled in local storage
   if (localStorage.getItem('dark-theme') === 'disabled') {
-      $('body').removeClass('dark-theme');
-      $('#dark-mode-checkbox').prop('checked', true);
-      $('#rails-icon').attr('src', './assets/svg/rails.svg');
+    $('body').removeClass('dark-theme');
+    $('#dark-mode-checkbox').prop('checked', true);
+    $('#rails-icon').attr('src', './assets/svg/rails.svg');
   }
 
   // Animation delays for specific elements 
@@ -126,16 +125,16 @@ $(document).ready(function() {
   // Toggle dark mode on checkbox change
   $('#dark-mode-checkbox').change(function() {
     $('body').addClass('animation-delay');
-      if ($(this).is(':checked')) {
+    if ($(this).is(':checked')) {
       $('.darkCircle').removeClass('grow');
       $('.lightCircle').addClass('grow');
-        localStorage.setItem('dark-theme', 'disabled');
-        $('#rails-icon').attr('src', './assets/svg/rails.svg');
-      } else {
+      localStorage.setItem('dark-theme', 'disabled');
+      $('#rails-icon').attr('src', './assets/svg/rails.svg');
+    } else {
       $('.lightCircle').removeClass('grow');
       $('.darkCircle').addClass('grow');
-        localStorage.setItem('dark-theme', 'enabled');
-        $('#rails-icon').attr('src', './assets/svg/rails-dark-theme.svg');
+      localStorage.setItem('dark-theme', 'enabled');
+      $('#rails-icon').attr('src', './assets/svg/rails-dark-theme.svg');
     };
     $('body').toggleClass('dark-theme');
   });

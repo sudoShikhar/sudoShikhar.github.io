@@ -2467,9 +2467,14 @@ p.lead {
   width: 3.5rem;
   background-color: var(--text-color);
   color: var(--background-color);
-  border-radius: 100%;
+  border-radius: 2em;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  position: relative;
+  /* filter: url(#goo); */
+}
+.social-icons .social-icon a {
+  color: var(--background-color);
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
