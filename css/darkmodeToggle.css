@@ -16,8 +16,7 @@
   border-radius: 50px;
   transition: 500ms;
   overflow: hidden;
-  transform: scale(0.35);
-  transform: scaleX(-1);
+  transform: scale(0.35) scaleX(-1);
 }
 
 .dark-mode-toggle {
