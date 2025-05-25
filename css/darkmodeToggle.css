@@ -30,7 +30,7 @@
   background: #FAEAF1;
   overflow: hidden;
   box-shadow: 0 0 35px 4px rgba(255, 255, 255);
-  transition: all 500ms ease-out;
+  transition: all 500ms ease-out !important;
 }
 
 .crater {
