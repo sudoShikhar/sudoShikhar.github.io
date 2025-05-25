@@ -60,6 +60,36 @@
   }
 })(jQuery); // End of use strict
 
+function makeArray(n) {
+  return Array.from({ length: n }, (_, i) => parseFloat((0.3 + i * 0.1).toFixed(1)));
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    // Generate a random index from 0 to i
+    const j = Math.floor(Math.random() * (i + 1));
+    // Swap elements at indices i and j
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function addAnimationDelays(selector) {
+  const elements = document.querySelectorAll(selector);
+  const delays = shuffleArray(makeArray(elements.length));
+  elements.forEach(function(element, index) {
+    element.style.animationDelay = `${delays[index]}s`;
+  });
+}
+
+function addAnimationDurations(selector, duration) {
+  const elements = document.querySelectorAll(selector);
+  console.log(elements.length)
+  elements.forEach(function(element) {
+    element.style.setProperty('--fa-animation-duration', `${duration}s`);
+  });
+}
+
 $(document).ready(function() {
   console.log('You may not find what you\'re looking for in devtools. Feel free to reach out to me though...');
 
@@ -74,6 +104,24 @@ $(document).ready(function() {
       $('#dark-mode-checkbox').prop('checked', true);
       $('#rails-icon').attr('src', './assets/svg/rails.svg');
   }
+
+  // Animation delays for specific elements 
+  [
+    '#skills .fa-bounce',
+    '#awards .fa-trophy',
+    '#certifications .fa-certificate',
+    '#interests .fas',
+  ].forEach(function(selector) {
+    addAnimationDelays(selector);
+  });
+
+  // Animation durations for specific elements
+  [
+    ['#about .fab', 2.5],
+    ['#interests .fas', 2],
+  ].forEach(function([selector, duration]) {
+    addAnimationDurations(selector, duration);
+  });
 
   // Toggle dark mode on checkbox change
   $('#dark-mode-checkbox').change(function() {
