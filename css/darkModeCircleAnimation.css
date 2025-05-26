@@ -1,4 +1,3 @@
-
 /* CIRCLE STYLES AND ANIMATION */
 
 :root {
@@ -6,7 +5,8 @@
   --background-color-dark: #292d32;
 }
 
-.darkCircle, .lightCircle {
+.darkCircle,
+.lightCircle {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,13 +24,15 @@
   background-color: var(--background-color-light);
 }
 
-.darkCircle.grow, .lightCircle.grow {
+.darkCircle.grow,
+.lightCircle.grow {
   animation-name: circle-grow;
   animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
 }
 
-body.animation-delay, body.animation-delay * {
+body.animation-delay,
+body.animation-delay * {
   transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out, fill 0.7s ease-in-out;
 }
 
@@ -38,6 +40,7 @@ body.animation-delay, body.animation-delay * {
   0% {
     clip-path: circle(0% at 50% 0%);
   }
+
   100% {
     clip-path: circle(150% at 50% 0%);
   }

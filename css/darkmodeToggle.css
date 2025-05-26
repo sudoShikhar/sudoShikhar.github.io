@@ -134,7 +134,9 @@
   bottom: 35px;
 }
 
-.star-6, .star-7, .star-8 {
+.star-6,
+.star-7,
+.star-8 {
   width: 10px;
   height: 2px;
   border-radius: 2px;
@@ -183,27 +185,27 @@
   }
 }
 
-#dark-mode-checkbox:checked + .toggle {
+#dark-mode-checkbox:checked+.toggle {
   background: #24D7F7;
 }
 
-#dark-mode-checkbox:checked + .toggle .dark-mode-toggle {
+#dark-mode-checkbox:checked+.toggle .dark-mode-toggle {
   background: #F7FFFF;
   transform: translateX(102px);
   box-shadow: 0 0 35px 5px rgba(255, 255, 255);
 }
 
-#dark-mode-checkbox:checked + .toggle .dark-mode-toggle .crater {
+#dark-mode-checkbox:checked+.toggle .dark-mode-toggle .crater {
   transform: rotate(-45deg) translateX(70px);
 }
 
-#dark-mode-checkbox:checked + .toggle .star {
+#dark-mode-checkbox:checked+.toggle .star {
   animation: move 2s infinite;
   transform: none;
   box-shadow: none;
 }
 
-#dark-mode-checkbox:checked + .toggle .star-1 {
+#dark-mode-checkbox:checked+.toggle .star-1 {
   width: 40px;
   height: 10px;
   border-radius: 10px;
@@ -213,34 +215,34 @@
   box-shadow: none;
 }
 
-#dark-mode-checkbox:checked + .toggle .star-2 {
+#dark-mode-checkbox:checked+.toggle .star-2 {
   width: 12px;
   height: 12px;
   background: #FFF;
   left: 26px;
   top: 23px;
-  box-shadow: -1px 0 2px 0 rgba(0, 0 , 0, 0.1);
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-#dark-mode-checkbox:checked + .toggle .star-3 {
+#dark-mode-checkbox:checked+.toggle .star-3 {
   width: 16px;
   height: 16px;
   background: #FFF;
   left: 35px;
   top: 19px;
-  box-shadow: -1px 0 2px 0 rgba(0, 0 , 0, 0.1);
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-#dark-mode-checkbox:checked + .toggle .star-4 {
+#dark-mode-checkbox:checked+.toggle .star-4 {
   width: 14px;
   height: 14px;
   background: #FFF;
   left: 46px;
   top: 21px;
-  box-shadow: -1px 0 2px 0 rgba(0, 0 , 0, 0.1);
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-#dark-mode-checkbox:checked + .toggle .star-5 {
+#dark-mode-checkbox:checked+.toggle .star-5 {
   width: 60px;
   height: 15px;
   border-radius: 15px;
@@ -250,45 +252,45 @@
   box-shadow: none;
 }
 
-#dark-mode-checkbox:checked + .toggle .star-6 {
+#dark-mode-checkbox:checked+.toggle .star-6 {
   width: 18px;
   height: 18px;
   background: #FFF;
   border-radius: 50%;
   left: 38px;
   bottom: 20px;
-  box-shadow: -1px 0 2px 0 rgba(0, 0 , 0, 0.1);
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-#dark-mode-checkbox:checked + .toggle .star-7 {
+#dark-mode-checkbox:checked+.toggle .star-7 {
   width: 24px;
   height: 24px;
   background: #FFF;
   border-radius: 50%;
   left: 52px;
   bottom: 20px;
-  box-shadow: -1px 0 2px 0 rgba(0, 0 , 0, 0.1);
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-#dark-mode-checkbox:checked + .toggle .star-8 {
+#dark-mode-checkbox:checked+.toggle .star-8 {
   width: 21px;
   height: 21px;
   background: #FFF;
   border-radius: 50%;
   left: 70px;
   top: 59px;
-  box-shadow: -1px 0 2px 0 rgba(0, 0 , 0, 0.1);
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 @keyframes move {
   0% {
     transform: none;
   }
-  
+
   25% {
     transform: translateX(2px);
   }
-  
+
   100% {
     transform: translateX(-2px);
   }

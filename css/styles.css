@@ -2481,6 +2481,7 @@ p.lead {
 .social-icons .social-icon:hover {
   background-color: var(--custom-primary-bg);
   text-decoration: none;
+  transition: none;
 }
 .social-icon .social-icon-tooltip {
   position: absolute;
