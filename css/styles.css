@@ -2471,7 +2471,6 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
   position: relative;
-  /* filter: url(#goo); */
 }
 .social-icons .social-icon a {
   color: var(--background-color);
@@ -2482,6 +2481,38 @@ p.lead {
 .social-icons .social-icon:hover {
   background-color: var(--custom-primary-bg);
   text-decoration: none;
+}
+.social-icon .social-icon-tooltip {
+  position: absolute;
+  display: none;
+  background-color: var(--custom-primary-bg);
+  border-radius: 2em;
+  font-size: 1.15rem;
+  white-space: nowrap;
+  align-content: center;
+  
+  top: 120%;
+  left: 0%;
+
+  width: fit-content;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+  height: fit-content;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+.social-icons .social-icon-tooltip-hourglass-shape {
+  background-color: var(--custom-primary-bg);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  border-radius: 0rem;
+  clip-path: path('M 11,22 Q 28,35 9,40 L 50,40 Q 28,37 45,22 Z');
+}
+.social-icon:hover .social-icon-tooltip, .social-icon:hover .social-icon-tooltip-hourglass-shape {
+  display: block;
 }
 .dev-icons {
   font-size: 3rem;
