@@ -31,31 +31,6 @@
   $('body').scrollspy({
     target: '#sideNav',
   });
-
-  // Animation on hover for the link icon right next to projects heading
-  const linkIcon = document.getElementsByClassName('fa-link')[0];
-  $(linkIcon).hover(function() {
-    $(this).toggleClass('fa-beat-fade');
-  });
-
-  // Animation on hover for the social icons in about section
-  const socialIcons = document.getElementsByClassName('social-icons')[0].getElementsByClassName('fab');
-  for (let i = 0; i < socialIcons.length; i++) {
-    $(socialIcons[i].parentElement).hover(function() {
-      $(socialIcons[i]).toggleClass('fa-flip');
-    });
-  }
-
-  // Animation on hover for the gear icons in projects
-  const animationElements = document.getElementsByClassName('fa-gear');
-  for (let i = 0; i < animationElements.length; i++) {
-    $(animationElements[i]).hover(function() {
-      $(animationElements[i]).toggleClass('fa-spin');
-    });
-    $(animationElements[i].parentElement.nextElementSibling).hover(function() {
-      $(animationElements[i]).toggleClass('fa-spin');
-    });
-  }
 })(jQuery); // End of use strict
 
 function makeArray(n) {
@@ -121,6 +96,32 @@ $(document).ready(function() {
     ['#interests .fas', 2],
   ].forEach(function([selector, duration]) {
     addAnimationDurations(selector, duration);
+  });
+
+  // Animation on hover for the gear icons in projects
+  const gearIcons = document.querySelectorAll('.fa-gear');
+  gearIcons.forEach(function(icon) {
+    $(icon).hover(function() {
+      $(this).toggleClass('fa-spin');
+    });
+    $(icon.nextElementSibling).hover(function() {
+      $(this).toggleClass('fa-spin');
+    });
+  });
+
+  // Animation on hover for the link icon right next to projects heading
+  const linkIcon = document.querySelector('#projects .fa-link');
+  $(linkIcon).hover(function() {
+    $(this).toggleClass('fa-beat-fade');
+  });
+
+  // Animation on hover for the social icons in about section
+  const socialIcons = document.querySelectorAll('.social-icon');
+  socialIcons.forEach(function(icon) {
+    $(icon).hover(function() {
+      $(this.firstElementChild).toggleClass('fa-flip');
+    });
+
   });
 
   // Toggle dark mode on checkbox change
