@@ -7,9 +7,10 @@
 }
 
 .toggle {
-  position: relative;
+  position: fixed;
+  right: -2.5rem;
+  top: -1.2rem;
   cursor: pointer;
-  display: inline-block;
   width: 200px;
   height: 100px;
   background: #211042;
@@ -17,6 +18,7 @@
   transition: 500ms;
   overflow: hidden;
   transform: scale(0.35) scaleX(-1);
+  z-index: 1031;
 }
 
 .dark-mode-toggle {

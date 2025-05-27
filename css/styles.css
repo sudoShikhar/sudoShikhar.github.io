@@ -2446,11 +2446,15 @@ p.lead {
     align-items: flex-start;
     flex-grow: 0;
     width: 100%;
+    height: 100%;
+
     margin-bottom: auto;
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
