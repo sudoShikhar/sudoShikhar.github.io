@@ -1,3 +1,7 @@
+.rotate {
+  transition: none;
+}
+
 .rotating {
   display: inline-block;
   -webkit-transform-style: preserve-3d;
