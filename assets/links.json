@@ -11,8 +11,8 @@
   "project_watchTracker_code": "https://github.com/sudoShikhar/Anime-Watch-Tracker",
   "project_urlShortener_code": "https://github.com/sudoShikhar/django-url-shortener",
 
-  "profile_image": "https://sudoshikhar.github.io/assets/img/profile.png",
-  "portfolio_image": "https://sudoshikhar.github.io/assets/img/portfolio.png",
-  "project_watchTracker_image": "https://sudoshikhar.github.io/assets/img/watchTracker.png",
-  "project_urlShortener_image": "https://sudoshikhar.github.io/assets/img/urlShortener.png"
+  "profile_image": "https://raw.githubusercontent.com/sudoShikhar/sudoShikhar.github.io/refs/heads/master/assets/img/profile.png",
+  "portfolio_image": "https://raw.githubusercontent.com/sudoShikhar/sudoShikhar.github.io/refs/heads/master/assets/img/portfolio.png",
+  "project_watchTracker_image": "https://raw.githubusercontent.com/sudoShikhar/sudoShikhar.github.io/refs/heads/master/assets/img/anime_watch_tracker.png",
+  "project_urlShortener_image": "https://raw.githubusercontent.com/sudoShikhar/sudoShikhar.github.io/refs/heads/master/assets/img/url_shortener.png"
 }
