@@ -68,17 +68,23 @@ function addAnimationDurations(selector, duration) {
 $(document).ready(function() {
   console.log('You may not find what you\'re looking for in devtools. Feel free to reach out to me though...');
 
-  $(".rotate").textrotator({
-    animation: "fade",
-    speed: 1500
-  });
-
   // Check if dark mode is already enabled in local storage
   if (localStorage.getItem('dark-theme') === 'disabled') {
     $('body').removeClass('dark-theme');
     $('#dark-mode-checkbox').prop('checked', true);
     $('#rails-icon').attr('src', './assets/svg/rails.svg');
   }
+
+  // Initialize text rotator in the about section
+  $(".rotate").textrotator({
+    animation: "fade",
+    speed: 1500
+  });
+
+  // Nav collapse button event listener
+  $('.navbar-toggler').click(function() {
+    $('#navbarSupportedContent').toggleClass('show');
+  });
 
   // Animation delays for specific elements 
   [
