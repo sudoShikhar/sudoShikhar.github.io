@@ -1,0 +1,47 @@
+/* CIRCLE STYLES AND ANIMATION */
+
+:root {
+  --background-color-light: #fff;
+  --background-color-dark: #292d32;
+}
+
+.darkCircle,
+.lightCircle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 50% 0%);
+  z-index: -1;
+}
+
+.darkCircle {
+  background-color: var(--background-color-dark);
+}
+
+.lightCircle {
+  background-color: var(--background-color-light);
+}
+
+.darkCircle.grow,
+.lightCircle.grow {
+  animation-name: circle-grow;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+}
+
+body.animation-delay,
+body.animation-delay * {
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out, fill 0.7s ease-in-out;
+}
+
+@keyframes circle-grow {
+  0% {
+    clip-path: circle(0% at 50% 0%);
+  }
+
+  100% {
+    clip-path: circle(150% at 50% 0%);
+  }
+}
