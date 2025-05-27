@@ -105,7 +105,7 @@ $(document).ready(function() {
       $(this).toggleClass('fa-spin');
     });
     $(icon.nextElementSibling).hover(function() {
-      $(this).toggleClass('fa-spin');
+      $(icon).toggleClass('fa-spin');
     });
   });
 
